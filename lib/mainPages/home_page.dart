@@ -1,9 +1,10 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:wealth_wise_app/lists.dart';
 import 'package:wealth_wise_app/mainPages/upcomingTransactionsPage.dart';
-
-import '../lists.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         body: Stack(children: [
       ListView(
-        physics: const AlwaysScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         padding: EdgeInsets.zero,
         scrollDirection: Axis.vertical,
         shrinkWrap: false,
@@ -128,6 +129,7 @@ class _HomePageState extends State<HomePage> {
             child: SizedBox(
               height: 120,
               child: ListView.builder(
+                  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   itemCount: upcomingTransactions.length,
                   itemBuilder: (context, int index) {
@@ -333,6 +335,7 @@ class _CalendarWeeklyViewState extends State<CalendarWeeklyView> {
                 onValueChanged: (value) {
                   setState(() {
                     groupValue = value;
+                    // ignore: avoid_print
                     print(groupValue);
                   });
                 })),
@@ -348,6 +351,7 @@ class _CalendarWeeklyViewState extends State<CalendarWeeklyView> {
   }
 }
 
+// ignore: must_be_immutable
 class VerticalList extends StatefulWidget {
   VerticalList({super.key, required this.date});
   late DateTime date;
@@ -360,7 +364,7 @@ class _VerticalListState extends State<VerticalList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.only(top: 5),
         shrinkWrap: true,
         scrollDirection: Axis.vertical,

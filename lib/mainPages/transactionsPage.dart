@@ -40,6 +40,7 @@ class _UpcomingTransactionsListState extends State<UpcomingTransactionsList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        physics: const BouncingScrollPhysics(),
         padding: EdgeInsets.zero,
         shrinkWrap: false,
         scrollDirection: Axis.vertical,

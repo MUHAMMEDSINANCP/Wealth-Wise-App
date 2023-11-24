@@ -12,6 +12,7 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: ListView(
+      physics: const BouncingScrollPhysics(),
       // ignore: prefer_const_literals_to_create_immutables
       children: [
         const Align(

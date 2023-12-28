@@ -1,16 +1,18 @@
-# wealth_wise_app
+## Wealth Wise App
+Wealth Wise App is a minimalistic MVP dedicated to personal finance management, offering a clean UI designed with clean architecture principles. This app harnesses Flutter's state management capabilities for seamless handling of financial data, empowering users to effortlessly track their income and expenses for better financial control.
 
-A new Flutter project.
+### Features :
 
-## Getting Started
+Personal Finance Tracking : Easily log and monitor income, expenses, and financial transactions.
 
-This project is a starting point for a Flutter application.
+Clean UI Design : Enjoy a visually appealing and intuitive interface tailored for efficient financial monitoring.
 
-A few resources to get you started if this is your first Flutter project:
+Clean Architecture : Implements clean architecture practices for robust code organization and scalability.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter State Management : Utilizes Flutter's state management for responsive and reliable financial data handling.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Purpose :
+This repository serves as a demonstration of an MVP app for managing personal finances, emphasizing clean UI design, clean architecture, and effective state management practices.
+
+### Feedback :
+We value your insights! Please share your feedback and suggestions at cpmuhammedsinan@gmail.com, contributing to the enhancement of the Wealth Wise App.

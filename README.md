@@ -17,3 +17,4 @@ This repository serves as a demonstration of an MVP app for managing personal fi
 
 ### Feedback :
 I value your insights! Please share your feedback and suggestions at cpmuhammedsinan@gmail.com, contributing to the enhancement of the Wealth Wise App.
+ 
